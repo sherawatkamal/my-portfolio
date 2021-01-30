@@ -1,5 +1,7 @@
 import React, { PureComponent } from 'react';
 import {NavLink} from 'react-router-dom';
+import ReactDOM from 'react-dom';
+import { SocialIcon } from 'react-social-icons';
 
 export default function About() {
     return (
@@ -20,8 +22,10 @@ export default function About() {
                         About Me!
                     </NavLink>
                 </nav>
-                <div>
-                    
+                <div className="inline-flex py-3 px-3 my-6">
+                <SocialIcon url="https://twitter.com/SherawatKamal" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}} />
+                <SocialIcon url="https://www.linkedin.com/in/kamal-sherawat-5212721a6/" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}} />
+                <SocialIcon url="https://github.com/sherawatkamal" className="mr-4" target="_blank" fgColor="#fff" style={{height: 35, width: 35}} />
                 </div>
             </div>
         </header>
